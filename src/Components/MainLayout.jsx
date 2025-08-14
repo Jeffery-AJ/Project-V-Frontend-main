@@ -9,6 +9,8 @@ import { ContainerScroll } from "./ui/container-scroll-animation";
 import { MorphingText } from "./magicui/morphing-text";
 import { FlickeringGrid } from './magicui/flickering-grid';
 import { useNavigate } from 'react-router-dom';
+import linearJpg from './linear.jpg';
+
 
 
 const HeroSection = () => {
@@ -212,7 +214,7 @@ const HighlightSection = () => {
         >
           <Box
             component="img"
-            src="/linear.webp"
+            src={linearJpg}
             alt="hero"
             draggable={false}
             sx={{

@@ -5,10 +5,12 @@ import SignUp from './Pages/SignUp';
 import SignIn from './Pages/SignIn';
 import { ThemeProvider } from './Context/ThemeContext';
 import { SidebarDemo } from './Components/Sidebar';
-import Dashboard from './Pages/StudyTools';
-import Dashboard1 from './Pages/AIasistant';
-import Dashboard2 from './Pages/Collabration';
-import Dashboard3 from './Pages/UserSettings';
+import Dashboard from './Pages/Overview';
+import Accounts from './Pages/Accounts';
+import Transactions from './Pages/Transactions';
+import Uploads from './Pages/Uploads';
+import AICFO from './Pages/AICFO';
+import Settings from './Pages/Settings';
 import { startTokenRefresh } from './utils/auth';
 import AuthCallback from './Pages/AuthCallback';
 
@@ -24,7 +26,7 @@ export default function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
-          <Route path="/menu" element={<SidebarDemo studyTools={Dashboard} aiAssit={Dashboard1} collabration={Dashboard2} settings={Dashboard3}/>} />
+          <Route path="/menu" element={<SidebarDemo overview={Dashboard} accounts={Accounts} transactions={Transactions} uploads={Uploads} aiCfo={AICFO} settings={Settings}/>} />
           <Route path="/auth/callback" element={<AuthCallback />} />
         </Routes>
       </BrowserRouter>

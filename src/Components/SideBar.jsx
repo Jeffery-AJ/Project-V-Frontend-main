@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useMemo, useCallback, useContext } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "./ui/ContentBar";
 import {
-  IconLayoutSidebarLeftExpandFilled,
-  IconLayoutSidebarLeftCollapseFilled,
-  IconBook,
+  IconChartPie,
+  IconUsers,
+  IconUpload,
   IconSettings,
   IconUserBolt,
   IconTopologyRing2,
